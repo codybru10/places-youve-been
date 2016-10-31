@@ -25,6 +25,10 @@ debugger;
 
     $("ul#output").append("<li><span class='destination'>" + newDestination.fullList() + "</span></li>");
 
+    $("input#inputDestination").val("");
+    $("input#inputLandmark").val("");
+    $("input#inputActivity").val("");
+
     $(".destination").last().click(function() {
     $("#show-destination").show();
     $("#show-destination h2").text(newDestination.place);
